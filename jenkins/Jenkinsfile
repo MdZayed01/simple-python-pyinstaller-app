@@ -33,7 +33,7 @@ pipeline {
         stage('Run Tests') {
             steps {
                 // Run tests using pytest
-                sh 'venv/bin/pytest --junitxml=test-results/results.xml test_ops.py'
+                sh 'venv/bin/pytest --junitxml=test-results/results.xml sources/test_calc.py'
             }
         }
     }
