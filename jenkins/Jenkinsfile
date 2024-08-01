@@ -23,12 +23,6 @@ pipeline {
             }
         }
 
-        stage('Run Ops Script') {
-            steps {
-                // Run the ops.py script
-                sh 'venv/bin/python ops.py'
-            }
-        }
 
         stage('Run Tests') {
             steps {
